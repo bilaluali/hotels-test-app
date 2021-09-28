@@ -6,7 +6,7 @@ import useStyles from './styles';
 
 const DEFAULT_SRC = process.env.PUBLIC_URL + "/placeholder.png"
   
-const HouseStatusCardImage = ({
+const HouseCardImage = ({
     className,
     status,
     src,
@@ -31,4 +31,4 @@ const HouseStatusCardImage = ({
     )
 };
 
-export default HouseStatusCardImage;
+export default HouseCardImage;

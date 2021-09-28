@@ -1,29 +1,29 @@
 import * as React from 'react';
 import { storiesOf } from '@storybook/react';
-import { Container, Paper, Grid } from '@material-ui/core';
+import { Container, Paper } from '@material-ui/core';
 
-import HouseStatusCardImage from './HouseStatusCardImage';
+import HouseCardImage from './HouseCardImage';
 
-storiesOf('House.HouseStatusCardImage', module).add('Simple', () => (
+storiesOf('House.HouseCardImage', module).add('Simple', () => (
     <Container>
       <Paper>
-        <HouseStatusCardImage
+        <HouseCardImage
           src="https://picsum.photos/1351/675"
           status="AVAILABLE"
         />
-        <HouseStatusCardImage
+        <HouseCardImage
           src="https://picsum.photos/1260/630"
           status="UNAVAILABLE"
         />
-        <HouseStatusCardImage
+        <HouseCardImage
           src="https://picsum.photos/1249/624"
           status="BOOKED"
         />
-        <HouseStatusCardImage
+        <HouseCardImage
           src=""
           status="BOOKED"
         />
-        <HouseStatusCardImage
+        <HouseCardImage
           status="BOOKED"
         />
       </Paper>
