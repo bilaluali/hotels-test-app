@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Container, Grid } from '@material-ui/core';
-import { makeStyles } from '@material-ui/styles';
+import { makeStyles } from '@mui/styles';
 import classnames from 'classnames';
 
 import AppBar from '../AppBar';

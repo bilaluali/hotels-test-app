@@ -1,13 +1,13 @@
 import * as React from 'react';
 import { AppBar as MuiAppBar } from '@material-ui/core';
-import { makeStyles } from '@material-ui/styles';
+import { makeStyles } from '@mui/styles';
 import classnames from 'classnames';
 
 import AppBarLogo from './AppBarLogo';
 import AppBarOffset from './AppBarOffset';
 
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles(unusedTheme => ({
     root: {
         padding: [[10, 0, 10, 0]]
     }

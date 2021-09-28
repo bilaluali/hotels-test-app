@@ -1,15 +1,16 @@
 import React from "react";
-import { makeStyles } from "@material-ui/styles";
+import { makeStyles } from '@mui/styles';
 
 const useStyles = makeStyles(theme => ({
-    offset: {
+    root: {
+        ...theme.mixins.toolbar,
         flexGrow: 1
     }
 }));
 
 const AppBarOffset = () => {
     const classes = useStyles();
-    return <div className={classes.offset} />;
+    return <div className={classes.root} />;
 };
 
 export default AppBarOffset;
