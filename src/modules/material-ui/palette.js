@@ -1,7 +1,7 @@
 export const primaryColor = '#2C64B7';
 export const secondaryColor = '#999999';
 export const successColor = '#11A960';
-export const dangerColor = '#E02323';
+export const errorColor = '#E02323';
 export const defaultFontColor = '#252733';
 
 const palette = {
@@ -14,8 +14,8 @@ const palette = {
     success: {
       main: successColor,
     },
-    danger: {
-      main: dangerColor,
+    error: {
+      main: errorColor,
     },
     text: {
       secondary: secondaryColor,

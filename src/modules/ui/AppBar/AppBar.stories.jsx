@@ -5,8 +5,8 @@ import { Container, Paper } from '@material-ui/core';
 import AppBar from './AppBar';
 
 storiesOf('MaterialUi.AppBar', module).add('Simple', () => (
-    <Container vertical>
-      <Paper vertical horizontal>
+    <Container>
+      <Paper>
         <AppBar />
       </Paper>
     </Container>
