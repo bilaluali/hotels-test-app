@@ -18,7 +18,10 @@ const palette = {
       main: errorColor,
     },
     text: {
-      secondary: secondaryColor,
+      main: secondaryColor,
+    },
+    default: {
+      main: defaultFontColor,
     },
   }
 

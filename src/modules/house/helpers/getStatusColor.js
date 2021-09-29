@@ -1,6 +1,6 @@
 import HouseStatus from './status';
 
-const getStatusColor = status =>{
+const getStatusColor = status => {
     return {
         [HouseStatus.AVAILABLE]: 'success',
         [HouseStatus.UNAVAILABLE]: 'error',
