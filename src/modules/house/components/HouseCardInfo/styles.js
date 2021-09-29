@@ -7,7 +7,8 @@ const useStyles = makeStyles(theme => ({
         },
         '& .MuiListItemText-secondary': {
             color: `${theme.palette.default.main} !important`,
-            fontStyle: 'italic'
+            fontStyle: 'italic',
+            fontWeight: 900
         }
     }
 }));

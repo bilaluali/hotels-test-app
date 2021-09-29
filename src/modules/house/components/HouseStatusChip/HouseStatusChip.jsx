@@ -5,14 +5,8 @@ import classnames from 'classnames';
 
 import getStatusColor from '../../helpers/getStatusColor';
 import getStatusLabel from '../../helpers/getStatusLabel';
+import useStyles from './styles';
 
-
-const useStyles = makeStyles(unusedTheme => ({
-    root: {
-        borderRadius: 30
-    }
-}));
-  
 const HouseStatusChip = ({
     className,
     status,
@@ -24,8 +18,12 @@ const HouseStatusChip = ({
             {...props}
             className={classnames(className, classes.root)}
             color={getStatusColor(status)}
+            size="small"
             label={
-            <Typography variant="subtitle2">
+            <Typography
+                className={classes.label}
+                variant="subtitle2"
+            >
                 {getStatusLabel(status)}
             </Typography>
             }

@@ -1,6 +1,5 @@
 import * as React from 'react';
-import { makeStyles } from '@mui/styles';
-import {  ListItemText, Typography } from '@material-ui/core';
+import {  ListItemText } from '@material-ui/core';
 import classnames from 'classnames';
 
 import useStyles from './styles';
@@ -19,10 +18,10 @@ const HouseCardInfo = ({
             primary={`Id: ${primary}`}
             secondary={secondary}
             primaryTypographyProps={
-                React.useMemo(() => ({ variant: 'body1' }), [])
+                React.useMemo(() => ({ variant: 'body2' }), [])
             }
             secondaryTypographyProps={
-                React.useMemo(() => ({ variant: 'h5' }), [])
+                React.useMemo(() => ({ variant: 'subtitle1' }), [])
             }
         />
     )
