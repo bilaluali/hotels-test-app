@@ -1,4 +1,4 @@
-import { ADD_ENTITIES, REMOVE_ENTITIES } from '../entities/actions';
+import { ADD_ENTITIES, REMOVE_ENTITIES } from './actions';
 
 
 export const initialState = {
