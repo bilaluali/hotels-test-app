@@ -26,6 +26,6 @@ export default function useHousesQuery() {
             .catch(error => {
                 console.log("ERR_FETCH: Cannot fetch data");
             })
-    }, []);
+    }, [dispatch]);
 
 };

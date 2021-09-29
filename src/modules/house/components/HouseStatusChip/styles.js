@@ -5,7 +5,7 @@ const useStyles = makeStyles(unusedTheme => ({
         borderRadius: 30
     },
     label: {
-        color: 'white'
+        color: 'white !important'
     }
 }));
 

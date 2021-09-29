@@ -11,8 +11,10 @@ const HouseCard = ({
     className,
     primary,
     secondary,
+    image,
     status,
-    src,
+    bookable,
+    booked,
     ...props
 }) => {
     const classes = useStyles();
@@ -24,7 +26,7 @@ const HouseCard = ({
             <HouseCardImage
                 className={classes.cardImage}
                 status={status}
-                src={src}
+                image={image}
             />
             <CardContent
                 className={classes.cardContent}

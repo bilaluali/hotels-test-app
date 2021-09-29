@@ -2,7 +2,7 @@ import * as React from 'react';
 import {  Grid } from '@material-ui/core';
 import classnames from 'classnames';
 
-import HouseCard from '../HouseCard';
+import HouseCard from '../../containers/HouseCard';
 import useStyles from './styles';
 
 const HousesOverview = ({
@@ -29,7 +29,6 @@ const HousesOverview = ({
                     <HouseCard {...item}/>
                 </Grid>
             )}
-            
         </Grid>
     )
 };

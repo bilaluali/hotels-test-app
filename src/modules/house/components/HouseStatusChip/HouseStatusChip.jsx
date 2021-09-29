@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { Chip, Typography } from '@material-ui/core';
-import { makeStyles } from '@mui/styles';
 import classnames from 'classnames';
 
 import getStatusColor from '../../helpers/getStatusColor';

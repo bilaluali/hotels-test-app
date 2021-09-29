@@ -2,13 +2,13 @@ import { ADD_ENTITIES, REMOVE_ENTITIES } from './actions';
 
 
 export const initialState = {
-    house: []
+  entities: []
 };
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_ENTITIES:
-      return { ...state, house: [...action.payload] }
+      return { ...state, entities: [...action.payload] }
     case REMOVE_ENTITIES:
       return initialState;
     default:

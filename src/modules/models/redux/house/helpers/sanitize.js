@@ -4,7 +4,7 @@ const sanitize = payload =>
         ...[{
             ...curr,
             status: !curr.bookable
-            ? "UNAVAILBLE"
+            ? "UNAVAILABLE"
             : (curr.booked > 0
                 ? "BOOKED"
                 : "AVAILABLE"

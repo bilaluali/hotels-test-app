@@ -3,9 +3,17 @@ import * as React from 'react';
 import HouseCard from '../components/HouseCard';
 
 
-const HouseCardContainer = (props) => {
+const HouseCardContainer = ({
+    id,
+    name,
+    ...props
+}) => {
     return (
-        <HouseCard {...props} />
+        <HouseCard
+            {...props}
+            primary={id}
+            secondary={name}
+        />
     );
 };
 

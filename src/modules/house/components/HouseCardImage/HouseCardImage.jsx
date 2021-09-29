@@ -4,12 +4,12 @@ import classnames from 'classnames';
 import HouseStatusChip from '../HouseStatusChip';
 import useStyles from './styles';
 
-const DEFAULT_SRC = process.env.PUBLIC_URL + "/placeholder.png"
+const DEFAULT_IMG = process.env.PUBLIC_URL + "/placeholder.png"
   
 const HouseCardImage = ({
     className,
     status,
-    src,
+    image,
     ...props
 }) => {
     const classes = useStyles();
@@ -21,7 +21,7 @@ const HouseCardImage = ({
             <img
                 className={classes.img}
                 alt="House Image"
-                src={src || DEFAULT_SRC}
+                src={image || DEFAULT_IMG}
             />
             <HouseStatusChip
                 className={classes.chip}

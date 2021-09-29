@@ -8,19 +8,19 @@ storiesOf('House.HouseCardImage', module).add('Simple', () => (
     <Container>
       <Paper>
         <HouseCardImage
-          src="https://picsum.photos/1351/675"
+          image="https://picsum.photos/1351/675"
           status="AVAILABLE"
         />
         <HouseCardImage
-          src="https://picsum.photos/1260/630"
+          image="https://picsum.photos/1260/630"
           status="UNAVAILABLE"
         />
         <HouseCardImage
-          src="https://picsum.photos/1249/624"
+          image="https://picsum.photos/1249/624"
           status="BOOKED"
         />
         <HouseCardImage
-          src=""
+          image=""
           status="BOOKED"
         />
         <HouseCardImage
