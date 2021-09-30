@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Card, CardContent } from '@material-ui/core';
+import { Card, CardContent, CardActions } from '@material-ui/core';
 import classnames from 'classnames';
 
 import HouseCardImage from '../HouseCardImage';
@@ -13,8 +13,8 @@ const HouseCard = ({
     secondary,
     image,
     status,
-    bookable,
-    booked,
+    Action,
+    ActionProps,
     ...props
 }) => {
     const classes = useStyles();
@@ -32,10 +32,16 @@ const HouseCard = ({
                 className={classes.cardContent}
             >
                 <HouseCardInfo
+                    className={classes.houseCardInfo}
                     primary={primary}
                     secondary={secondary}
                 />
             </CardContent>
+            <CardActions
+                className={classes.cardActions}
+            >
+                <Action {...ActionProps}/>
+            </CardActions>
         </Card>
     )
 };

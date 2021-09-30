@@ -15,7 +15,7 @@ const HousesOverview = ({
         <Grid
             {...props}
             className={classnames(className, classes.root)}
-            spacing={2}
+            spacing={5}
             container
         >
             {items.map(item => 
@@ -23,7 +23,8 @@ const HousesOverview = ({
                     item
                     key={item.id}
                     xs={12}
-                    md={6}
+                    sm={6}
+                    md={4}
                     lg={3}
                 >
                     <HouseCard {...item}/>
