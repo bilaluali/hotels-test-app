@@ -4,6 +4,7 @@ import { makeStyles } from '@mui/styles';
 const useStyles = makeStyles(theme => ({
     root: {
         ...theme.mixins.toolbar,
+        paddingTop: 10,
         flexGrow: 1
     }
 }));

@@ -4,10 +4,10 @@ const sanitize = payload =>
         ...[{
             ...curr,
             status: !curr.bookable
-            ? "UNAVAILABLE"
+            ? "unavailable"
             : (curr.booked > 0
-                ? "BOOKED"
-                : "AVAILABLE"
+                ? "booked"
+                : "available"
             )
         }]
     ], [])

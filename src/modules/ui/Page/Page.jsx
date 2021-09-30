@@ -6,9 +6,11 @@ import classnames from 'classnames';
 import AppBar from '../AppBar';
 
 
-const useStyles = makeStyles(unusedTheme => ({
+const useStyles = makeStyles(theme => ({
     root: {},
-    bodyContent: {},
+    bodyContent: {
+        paddingTop: theme.spacing(4)
+    },
 }));
   
 const Page = ({

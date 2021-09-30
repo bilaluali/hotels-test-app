@@ -6,12 +6,7 @@ import classnames from 'classnames';
 import AppBarLogo from './AppBarLogo';
 import AppBarOffset from './AppBarOffset';
 
-
-const useStyles = makeStyles(unusedTheme => ({
-    root: {
-        padding: [[10, 0, 10, 0]]
-    }
-}));
+import useStyles from './styles';
   
 const AppBar = ({
     className,
