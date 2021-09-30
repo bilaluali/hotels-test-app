@@ -1,11 +1,11 @@
 import { combineReducers } from 'redux';
 
 import * as models from '../../models/redux';
-import * as houseOverviewFilter from '../../house/modules/houses-overview/redux/houses-overview-filter';
+import * as housesFilter from '../../house/modules/houses-overview/redux/houses-filter-menu';
 
 const rootReducer = combineReducers({
     house: models.house.reducers,
-    houseOverviewFilter: houseOverviewFilter.reducers,
+    housesFilter: housesFilter.reducers,
 });
 
 export default rootReducer;

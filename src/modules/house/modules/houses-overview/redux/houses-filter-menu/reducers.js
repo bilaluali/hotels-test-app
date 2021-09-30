@@ -3,18 +3,14 @@ import HouseStatus from '../../../../helpers/status';
 
 
 export const initialState = {
-  filters: {
-    status: [...Object.values(HouseStatus)],
-    // TO-DO: filter by name, id...
-    // name: "",
-    // id: ""
-  }
+  status: [...Object.values(HouseStatus)],
+  // TO-DO: Filter by id, name...
 };
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case FILTER_STATUS:
-      return { ...state, filters: [...action.payload] }
+      return {...state, status: [...action.payload]}
     case CLEAR_FILTERS:
       return initialState
     default:

@@ -1,1 +1,1 @@
-export * as houseOverviewFilter from './house';
+export * as housesFilterMenu from './house';
