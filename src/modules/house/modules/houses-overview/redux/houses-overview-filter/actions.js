@@ -1,0 +1,2 @@
+export const FILTER_STATUS = "FILTER_STATUS";
+export const CLEAR_FILTERS = "CLEAR_FILTERS";
