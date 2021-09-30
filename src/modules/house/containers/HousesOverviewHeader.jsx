@@ -19,6 +19,8 @@ const HousesOverviewHeaderContainer = (props) => {
             {...props}
             primary={`Houses`}
             secondary={`${houses.length} items`}
+            Subheader={HouseStatusFilter}
+            SubheaderProps={{}}
         />
     );
 };

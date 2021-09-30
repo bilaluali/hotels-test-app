@@ -34,7 +34,6 @@ const FormCheckboxGroup = ({
         <FormControl
             {...props}
             className={classnames(className, classes.root)}
-            component="fieldset"
         >
             <FormLabel
                 className={classes.formLabel}
