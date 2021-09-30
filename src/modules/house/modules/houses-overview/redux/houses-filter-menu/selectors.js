@@ -1,6 +1,6 @@
 export const getFilters = (state) =>
-    state.house.filters;
+    state.housesFilter;
 
-export const getStatusesFilters = (state) =>
-    state.house.filters.status;
+export const getStatusFilters = (state) =>
+    state.housesFilter.status;
 

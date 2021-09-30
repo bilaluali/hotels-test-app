@@ -1,12 +1,12 @@
 import * as React from 'react';
 import { useSelector } from 'react-redux';
 
-import HousesOverview from '../components/HousesOverview';
 import * as models from '../../models/redux';
 import * as housesFilterRedux from '../modules/houses-overview/redux/houses-filter-menu';
+import HousesOverviewHeader from '../components/HousesOverviewHeader';
+import HouseStatusFilter from './HouseStatusFilter';
 
-
-const HousesOverviewContainer = (props) => {
+const HousesOverviewHeaderContainer = (props) => {
     const criteria = useSelector(
         state => housesFilterRedux.selectors.getFilters(state)
     )
@@ -15,8 +15,12 @@ const HousesOverviewContainer = (props) => {
     );
         
     return (
-        <HousesOverview {...props} items={houses}/>
+        <HousesOverviewHeader
+            {...props}
+            primary={`Houses`}
+            secondary={`${houses.length} items`}
+        />
     );
 };
 
-export default HousesOverviewContainer;
+export default HousesOverviewHeaderContainer;

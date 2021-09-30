@@ -1,4 +1,5 @@
-import filter from 'lodash/filter';
 
 export const filterBy = (state, criteria) =>
-    filter(state.house.entities, criteria);
+    state.house.entities.filter(
+        e => criteria.status.includes(e.status)
+    )    

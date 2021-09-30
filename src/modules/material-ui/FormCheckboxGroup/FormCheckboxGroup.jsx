@@ -29,9 +29,7 @@ const FormCheckboxGroup = ({
             : setChecked({...initialState, [key]: e.target.checked}),
         [multiple, checked, initialState]
     );
-
-    console.log('CHECKED', checked)
-
+    
     return (
         <FormControl
             {...props}
@@ -47,20 +45,19 @@ const FormCheckboxGroup = ({
             <FormGroup
                 className={classes.formGroup}
             >
-                {items.map(({ key, color, size, ...item }) => (
+                {items.map(({ key, label, ...item }) => (
                     <FormControlLabel
-                        {...item}
                         className={classes.formControlLabel}
                         key={key}
+                        label={label}
                         control={
                             <Checkbox
+                                {...item}
                                 className={classes.checkbox}
-                                color={color || 'primary'}
-                                size={size}
                                 checked={checked[key]}
                                 onChange={e => {
                                     handleCheck(e, key);
-                                    onChange(e);
+                                    onChange(e, key);
                                 }}
                             />
                         }

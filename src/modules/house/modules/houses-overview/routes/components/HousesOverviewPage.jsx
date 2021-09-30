@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Grid } from '@material-ui/core';
 import { makeStyles } from '@mui/styles';
 import classnames from 'classnames';
 
@@ -8,6 +9,7 @@ const useStyles = makeStyles(unusedTheme => ({
     root: {}
 }));
   
+
 const HousesOverviewPage = ({
     className,
     heading,
@@ -20,7 +22,17 @@ const HousesOverviewPage = ({
             {...props}
             className={classnames(className, classes.root)}
         >
-            {contents}
+            <Grid
+                container
+                spacing={4}
+            >
+                <Grid item xs={12}>
+                    {heading}
+                </Grid>
+                <Grid item xs={12}>
+                    {contents}
+                </Grid>
+            </Grid>
         </Page>
     )
 };
