@@ -5,7 +5,7 @@ const getStatusColor = status => {
         [HouseStatus.AVAILABLE]: 'success',
         [HouseStatus.UNAVAILABLE]: 'error',
         [HouseStatus.BOOKED]: 'primary',
-    }[HouseStatus[status]]
+    }[status]
 };
 
 export default getStatusColor;
