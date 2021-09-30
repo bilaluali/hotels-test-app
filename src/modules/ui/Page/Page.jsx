@@ -9,7 +9,8 @@ import AppBar from '../AppBar';
 const useStyles = makeStyles(theme => ({
     root: {},
     bodyContent: {
-        paddingTop: theme.spacing(4)
+        paddingTop: theme.spacing(4),
+        paddingBottom: theme.spacing(8)
     },
 }));
   

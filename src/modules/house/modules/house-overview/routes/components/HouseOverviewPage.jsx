@@ -13,7 +13,6 @@ const useStyles = makeStyles(unusedTheme => ({
     }
 }));
   
-
 const HouseOverviewPage = ({
     className,
     ...props
