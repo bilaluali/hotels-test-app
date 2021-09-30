@@ -21,6 +21,7 @@ const HouseCardContainer = ({
             Action={HouseCardAction}
             ActionProps={React.useMemo(
                 () => ({
+                    id,
                     status,
                     booked,
                     bookable

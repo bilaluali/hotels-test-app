@@ -5,6 +5,7 @@ import HouseCardAction from '../components/HouseCardAction';
 import HouseCardBookInfo from '../components/HouseCardBookInfo';
 
 const HouseCardActionContainer = ({
+    id,
     status,
     booked,
     bookable,
@@ -15,6 +16,7 @@ const HouseCardActionContainer = ({
         () => ({
             [HouseStatus.AVAILABLE]: {
                 label: "Book",
+                href: `${process.env.PUBLIC_URL}/houses/${id}`
             },
             [HouseStatus.UNAVAILABLE]: {
                 label: "Not Bookable",
