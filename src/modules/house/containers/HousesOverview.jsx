@@ -3,11 +3,14 @@ import { useSelector } from 'react-redux';
 
 import HousesOverview from '../components/HousesOverview';
 import * as models from '../../models/redux';
+import * as houseOverviewFilterRedux from '../modules/houses-overview/redux/houses-overview-filter';
 
 
 const HousesOverviewContainer = (props) => {
     const houses = useSelector(
-        state => models.house.selectors.filterBy(state, {})
+        state => models.house.selectors.filterBy(state, {
+            ...houseOverviewFilterRedux.selectors.getFilters
+        })
     );
         
     return (

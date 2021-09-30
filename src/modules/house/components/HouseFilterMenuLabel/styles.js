@@ -3,16 +3,15 @@ import { makeStyles } from '@mui/styles';
 const useStyles = makeStyles(theme => ({
     root: {
         '& .MuiListItemText-primary': {
-            color: `${theme.palette.success.main} !important`
+            color: theme.palette.primary.main,
         },
         '& .MuiListItemAvatar-root': {
             minWidth: 'auto',
         },
-        padding: [[4, 0, 4, 0]]
     },
     avatar: {
-        marginLeft: 5,
-        color: theme.palette.success.main
+        marginLeft: 2,
+        maxHeight: 24,
     },
     text: {
         margin: 0,

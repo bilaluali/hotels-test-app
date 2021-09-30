@@ -22,7 +22,7 @@ const HouseFilterMenuLabel = ({
                 className={classes.text}
                 primary={label || "Filter"}
                 primaryTypographyProps={
-                    React.useMemo(() => ({ variant: 'body2' }), [])
+                    React.useMemo(() => ({ variant: 'body1' }), [])
                 }
             />
              <ListItemAvatar
