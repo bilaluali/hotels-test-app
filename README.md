@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# Lodgify - Frontend Technical Test
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Lodigfy test is a react app that lists the houses of a customer
 
-## Available Scripts
+## Requirements
 
-In the project directory, you can run:
+  - [npm](https://www.npmjs.com/) as package manager
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Start
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+First, install all dependencies by running the following command on your project directory:
 
-### `npm test`
+```bash
+npm install
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+You can run the app in the development mode:
 
-### `npm run build`
+```bash
+npm start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Architecture
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+In this section, I'm going to explain how the app was structured. The first thing I want to point is how to split a component. Usually, a component can be split in a container and a component, container states for the component's logic and the component states for the presentation/visual of the component.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Modules
 
-### `npm run eject`
+The main modules that you can found in the app are:
+* [./core](https://github.com/bilaluali/lodgify-test-app/tree/master/src/modules/core): as the name describes, includes the core components of the application such as the redux config, the router...
+* [./material-ui](https://github.com/bilaluali/lodgify-test-app/tree/master/src/modules/material-ui): improved and adapted components from the material-ui library which can be used among the entire app.
+* [./models](https://github.com/bilaluali/lodgify-test-app/tree/master/src/modules/models): includes the redux files for each application entity.
+* [./house](https://github.com/bilaluali/lodgify-test-app/tree/master/src/modules/house): usually we will define a module per entity where we will define the containers and components related to the entity.
+* [./ui](https://github.com/bilaluali/lodgify-test-app/tree/master/src/modules/ui): "core" components that will be used among the entire application. This module should include few components such as Page, AppBar... Everything else should be placed in ```material-ui``` module.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Route example
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+If you're not familiar with this architecture, it may be confusing to know where to start checking the files for a concrete route. Hence, in the image below, you can see a tree showing the composition. Please note in the diagram I avoided putting in the tree both, the component and the container. So that, if the component has a container, first check the container.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+![route dom diagram](./doc/route-dom-diagram.png)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Storybook
 
-## Learn More
+You can start Storybook:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+npm run storybook
+```
+There's a bug between the newest version of material-ui (v5) and storybook when defining a material-ui custom theme. Hence, if you run storybook, some stories will crash. Check the [issue](https://github.com/mui-org/material-ui/issues/24282) here.
