@@ -23,7 +23,10 @@ const HouseOverviewPage = ({
             {...props}
             className={classnames(className, classes.root)}
         >
-            <img src="https://media.giphy.com/media/fnDY3C9MKukcER71r7/giphy.gif" /> 
+            <img
+                alt="Gif"
+                src="https://media.giphy.com/media/fnDY3C9MKukcER71r7/giphy.gif"
+            /> 
         </Page>
     )
 };

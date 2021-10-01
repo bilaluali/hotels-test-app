@@ -26,7 +26,7 @@ const HouseCardActionContainer = ({
                 label: `Booked for ${booked} days`,
             },
         }[status]),
-        [status]
+        [id, status, booked]
     );
 
     const Component = status === HouseStatus.BOOKED

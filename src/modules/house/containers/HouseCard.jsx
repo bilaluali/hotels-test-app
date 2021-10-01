@@ -26,7 +26,7 @@ const HouseCardContainer = ({
                     booked,
                     bookable
                 }),
-                [status, booked, bookable]
+                [id, status, booked, bookable]
             )}
         />
     );

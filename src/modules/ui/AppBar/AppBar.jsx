@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { AppBar as MuiAppBar } from '@material-ui/core';
-import { makeStyles } from '@mui/styles';
 import classnames from 'classnames';
 
 import AppBarLogo from './AppBarLogo';

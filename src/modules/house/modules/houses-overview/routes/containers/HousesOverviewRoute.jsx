@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { Container, Paper, Grid } from '@material-ui/core';
 
 import useHousesQuery from '../hooks/useHousesQuery';
 import HousesOverviewPage from '../components/HousesOverviewPage';

@@ -18,7 +18,7 @@ const FormCheckboxGroup = ({
     const initialState = React.useMemo(
         () => items.reduce(
             (acc, {key}) => ({...acc, [key]: initial}), {}),
-        [items]
+        [items, initial]
     )
 
     const [checked, setChecked] = React.useState(initialState);

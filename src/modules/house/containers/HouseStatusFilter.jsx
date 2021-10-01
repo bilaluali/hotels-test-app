@@ -17,7 +17,7 @@ const HouseStatusFilterContainer = (props) => {
     const handleChange = React.useCallback(
         (e, key) => dispatch(
             housesFilterRedux.actionsCreators.filterStatus([
-                ...statuses.filter(e => e != key),
+                ...statuses.filter(e => e !== key),
                 ...e.target.checked ? [key] : []
             ])
         ),
@@ -31,7 +31,7 @@ const HouseStatusFilterContainer = (props) => {
                 label: e,
                 size: 'small'
             })),
-        [statuses]
+        []
     );
     
 

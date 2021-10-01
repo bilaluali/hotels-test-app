@@ -20,7 +20,7 @@ const HouseCardImage = ({
     // TRICKY SOLUTION: Need to be improved
     const handleRendered = React.useCallback(
         () => setLoading(false),
-        [loading]
+        []
     );
     const handleRender = React.useCallback(
         () => requestAnimationFrame(handleRendered),
@@ -41,7 +41,7 @@ const HouseCardImage = ({
             }
             <img
                 className={classes.img}
-                alt="House Image"
+                alt="House"
                 src={image || DEFAULT_IMG}
                 onLoad={() => {
                     handleLoad();

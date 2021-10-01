@@ -23,7 +23,7 @@ const HousesOverview = ({
                     item
                     key={item.id}
                     xs={12}
-                    sm={6}
+                    sm={4}
                     md={4}
                     lg={3}
                 >

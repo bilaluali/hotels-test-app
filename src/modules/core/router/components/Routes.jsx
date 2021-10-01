@@ -1,17 +1,20 @@
 import * as React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
+
+import PageNotFound from '../../../core/components/PageNotFound';
 
 const Routes = ({ location, routes }) => (
-  <React.Suspense fallback={<div>Hello World!</div>}>
-    <Switch location={location}>
-      {routes.map(
-        route => (
-          <Route key={route.path} {...route} exact/>
-        ),
-      )}
-      <Route component={null} />
-    </Switch>
-  </React.Suspense>
+  <Switch location={location}>
+    {routes.map(
+      route => (
+        <Route key={route.path} {...route} exact/>
+      ),
+    )}
+    <Route exact path="/">
+      <Redirect to="/houses" />
+    </Route>
+    <Route component={PageNotFound} />
+  </Switch>
 );
 
 export default Routes;

@@ -1,15 +1,9 @@
-import { ThemeProvider } from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
-
-import theme from './modules/material-ui/theme';
+import RouterRoutes from './modules/core/router/containers/RouterRoutes';
+import Page from './modules/ui/Page'
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <div className="App">
-        <Typography variant="h6">Welcome Lodgify Test App</Typography>
-      </div>
-    </ThemeProvider>
+    <RouterRoutes />
   );
 }
 
