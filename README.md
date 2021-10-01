@@ -36,7 +36,7 @@ The main modules that you can found in the app are:
 
 ### Route example
 
-If you're not familiar with this architecture, it may be confusing to know where to start checking the files for a concrete route. Hence, in the image below, you can see a tree showing the composition. Please note in the diagram I avoided putting in the tree both, the component and the container. So that, if the component has a container, first check the container.
+If you're not familiar with this architecture, it may be confusing to know where to start checking the files for a concrete route. Hence, in the image below, you can see a tree showing the differnt components for houses route. Please note in the diagram I avoided putting in the tree both, the component and the container. So that, if the component has a container, first check the container.
 
 ![route dom diagram](./doc/route-dom-diagram.png)
 
