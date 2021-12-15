@@ -1,4 +1,4 @@
-# Lodgify - Frontend Technical Test
+# Hotels - Frontend Technical Test
 
 Lodigfy test is a react app that lists the houses of a customer
 
